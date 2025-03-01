@@ -28,19 +28,15 @@ class Draw extends JPanel implements ActionListener{
     boolean stats = true;
     public void actionPerformed(ActionEvent e) {
         if (stats ) {
-            r -= 5;
-            
+            r -= 5; 
             if (r == 0) {
                 stats = false;
-            }
-            
+            } 
         }else { 
             r+= 5; 
-            
             if (r == 100) {
                 stats = true;
             }
-
         }
         if (angle == 360) {
             angle = 0;
